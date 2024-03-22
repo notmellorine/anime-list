@@ -1,0 +1,25 @@
+.banner {
+  position: absolute;
+  background-color: rebeccapurple;
+  height: 80%;
+  width: 100%;
+}
+
+.itens-box {
+  transform: translateY(330%);
+  margin-left: 10px;
+}
+
+.banner button {
+  background-color: #F1B822;
+  border-radius: 20px;
+  border: none;
+  margin-right: 10px;
+  color: #031D46;
+  font-weight: bold;
+  font-size: 130%;
+  height: 40px;
+  width: 150px;
+}
+
+
