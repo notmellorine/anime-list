@@ -1,5 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .banner {
-  position: absolute;
   background-color: rebeccapurple;
   height: 80%;
   width: 100%;
@@ -29,6 +33,8 @@
 .banner button:active {
   background-color: #f1d99d;
 }
+
+
 
 
 
