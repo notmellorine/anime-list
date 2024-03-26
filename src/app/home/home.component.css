@@ -22,4 +22,13 @@
   width: 150px;
 }
 
+.banner button:hover {
+  background-color: #efbf46;
+}
+
+.banner button:active {
+  background-color: #f1d99d;
+}
+
+
 

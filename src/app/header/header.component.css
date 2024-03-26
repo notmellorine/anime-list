@@ -24,10 +24,9 @@
   height: 80%;
   aspect-ratio: 1;
   position: absolute;
-  right: -20%;
-  transform: translateX(-20%);
-  top: 10%;
+  transform: translateY(6px) translateX(-46px);
   border: none;
+  position: static;
 }
 
 .search-bar button:hover {
