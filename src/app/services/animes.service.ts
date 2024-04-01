@@ -11,4 +11,8 @@ export class AnimesService {
   getAnimes() {
     return this.httpClient.get('https://kitsu.io/api/edge/anime')
   }
+
+  getAnimeTitles() {
+
+  }
 }
