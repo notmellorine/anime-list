@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnimesService } from '../services/animes.service';
 
 @Component({
   selector: 'app-list',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ListComponent {
 
+  constructor(private animesService: AnimesService) {}
+
+  ngOnInit() {
+    this.animesService.getAnimes().subscribe(res => console.log(res))
+  }
 }
