@@ -3,7 +3,7 @@ type Subtype = 'ONA' | 'OVA' | 'TV' | 'movie' | 'music' | 'special';
 type Status = 'current' | 'finished' | 'tba' | 'unreleased' | 'upcoming';
 type ShowType = 'ONA' | 'OVA' | 'TV' | 'movie' | 'music' | 'special';
 
-interface ImageSizes {
+export interface ImageSizes {
   tiny: Dimensions | string;
   small: Dimensions | string;
   medium: Dimensions | string;
@@ -11,12 +11,12 @@ interface ImageSizes {
   original?: string;
 }
 
-interface Dimensions {
+export interface Dimensions {
   width: string;
   height: string;
 }
 
-interface Meta {
+export interface Meta {
   dimensions: {
     tiny: Dimensions;
     small: Dimensions;
@@ -25,7 +25,7 @@ interface Meta {
   }
 }
 
-interface Anime {
+export interface Anime {
   createdAt: string;
   updatedAt: string;
   slug: string;
