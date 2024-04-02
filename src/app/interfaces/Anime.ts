@@ -25,17 +25,22 @@ export interface Meta {
   }
 }
 
+export interface Titles {
+  en: string;
+  en_jp: string;
+  ja_jp: string;
+}
+
 export interface Anime {
+  id: number;
+  type: string;
   createdAt: string;
   updatedAt: string;
   slug: string;
   synopsis: string;
   coverImageTopOffset: number;
-  titles: {
-    en: string;
-    en_jp: string;
-    ja_jp: string;
-  },
+  titles: Titles;
+  canonicalTitle: string;
   abbreviatedTItles: [];
   averageRating: string;
   [ratingFrequencies: number]: string;

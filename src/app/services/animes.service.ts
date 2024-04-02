@@ -7,7 +7,7 @@ import { Anime } from '../interfaces/Anime';
 })
 export class AnimesService {
 
-  animeData!: Anime;
+  animeData!: Anime[];
 
   constructor(private httpClient: HttpClient) {}
 
@@ -15,11 +15,9 @@ export class AnimesService {
     return this.httpClient.get('https://kitsu.io/api/edge/anime')
   }
 
-  setAnimeTitles(titulo: {en: string, en_jp: string, ja_jp: string}) {
-    this.animeData.titles = titulo;
+  setAnimes(animes: Anime[]) {
+    this.animeData = animes;
+    console.log(this.animeData)
   }
 
-  getAnimeTitles() {
-    return this.animeData.titles;
-  }
 }

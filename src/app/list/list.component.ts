@@ -13,10 +13,14 @@ export class ListComponent {
   constructor(private animesService: AnimesService) {}
 
   ngOnInit() {
-    this.animesService.getAnimes().subscribe(res => console.log(res))
+    this.animesService.getAnimes().subscribe((res: any) => this.animesService.setAnimes(res.data))
+    //this.animesService.getAnimes().subscribe(res => console.log(res))
+    let animeTitulos: any = this.animesService.animeData.map(animes => animes.canonicalTitle);
+    console.log(animeTitulos)
+  }
 
-    this.animesService.setAnimeTitles('titulo');
-    console.log(titulo);
+  mountData() {
+
   }
 
 }
