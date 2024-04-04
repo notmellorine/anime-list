@@ -25,8 +25,19 @@ export class AnimesService {
   setAttributes() {
     return this.http.get('https://kitsu.io/api/edge/anime').pipe(
       map((res: any) => {
-        return res.data.map((item: any) => item.attributes);
+        return res.data.map((item: any) => item.attributes); //fazer um map dentro do objeto de 'data', para depois acessar o objeto de 'attributes';
       })
     )
   }
+
+ carrouselAtributtes() {
+  return this.http.get('https://kitsu.io/api/edge/anime').pipe(
+    map((res: any) => {
+      return res.data.map(({attributes}: any) => ({
+        canonicalTitle: attributes.canonicalTitle,
+        description: attributes.description
+      }))
+    })
+  )
+ }
 }

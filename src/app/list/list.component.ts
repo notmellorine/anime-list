@@ -17,10 +17,5 @@ export class ListComponent implements OnInit {
       this.animes = attributes;
       console.log(this.animes)
     })
-    //this.animesService.getAnimes().subscribe((res: any) => this.animesService.setAnimes(res.data))
-    //this.animesService.getAnimes().subscribe(res => console.log(res))
-  }
-
-  mountData() {
   }
 }
