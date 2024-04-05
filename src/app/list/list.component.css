@@ -1,5 +1,12 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 .grid-tile {
-  background-color: aqua;
-  height: 10%;
-  width: -10%;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  column-gap: 10px;
 }

@@ -21,7 +21,5 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  mountData() {
-    let animeTitle
-  }
+
 }

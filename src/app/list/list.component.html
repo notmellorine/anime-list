@@ -1,5 +1,8 @@
-<div>
-  <mat-grid-list cols="3" rowHeight="2:1" *ngFor="let anime of animes">
-    <mat-grid-tile class="grid-tile" style="background-color: blue;">{{anime.canonicalTitle}}</mat-grid-tile>
-  </mat-grid-list>
+<div class="grid">
+  <div
+    class="grid-tile"
+    *ngFor="let anime of animes"
+    [style.background-image]="'url('+ anime.posterImage.small +')'">
+    {{anime.canonicalTitle}}
+  </div>
 </div>
